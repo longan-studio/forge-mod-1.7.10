@@ -54,8 +54,10 @@ public class Constants {
     public static final String ASSETS_INDEX_URL = "https://s3.amazonaws.com/Minecraft.Download/indexes/{ASSET_INDEX}.json";
      */
 
-    public static final String MCP_URL = "https://lss233.littleservice.cn/repositories/forgedev/fernflower-fix-1.0.zip";
-    public static final String FORGE_MAVEN = "https://lss233.littleservice.cn/repositories/forgedev";
+    @Suppress("HttpUrlsUsage") // TODO: dead link
+    public static final String MCP_URL = "http://www.modcoderpack.com/files/mcp908.zip";
+    
+    public static final String FORGE_MAVEN = "https://maven.minecraftforge.net";
     public static final String LIBRARY_URL = "https://lss233.littleservice.cn/repositories/libraries.minecraft.net/";
 
     // MCP things
