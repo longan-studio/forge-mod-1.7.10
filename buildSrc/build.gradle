@@ -16,8 +16,8 @@ sourceCompatibility = '1.6'
 repositories {
     mavenLocal()
     maven {
-        name = "aliyun-mirror"
-        url = "https://maven.aliyun.com/repository/public"
+        name = "aliyun"
+        url = "https://maven.aliyun.com/repository/public/"
     }
     maven {
         name = "forge"
@@ -25,16 +25,12 @@ repositories {
     }
     maven {
         name = "mojang"
-        url = "https://lss233.littleservice.cn/repositories/libraries.minecraft.net"
+        url = "https://libraries.minecraft.net/"
     }
     maven {
         // because Srg2Source needs an eclipse dependency.
         name = "eclipse"
         url = "https://repo.eclipse.org/content/groups/eclipse/"
-    }
-    maven {
-        name = "gradle-plugin"
-        url = "https://maven.aliyun.com/repository/gradle-plugin"
     }
 }
 
@@ -76,7 +72,10 @@ dependencies {
     // mcp stuff
     implementation 'de.oceanlabs.mcp:RetroGuard:3.6.6'
     implementation 'de.oceanlabs.mcp:mcinjector:3.2-SNAPSHOT'
-    implementation 'net.minecraftforge.srg2source:Srg2Source:4.2.7'
+    
+    //implementation 'net.minecraftforge.srg2source:Srg2Source:4.2.7'
+    
+    implementation("net.minecraftforge:Srg2Source:4.2.7")
 
     //Stuff used in the GradleStart classes
     compileOnly 'com.mojang:authlib:1.5.16'
