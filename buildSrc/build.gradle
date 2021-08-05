@@ -32,6 +32,11 @@ repositories {
         name = "eclipse"
         url = "https://repo.eclipse.org/content/groups/eclipse/"
     }
+    
+    maven {
+        name = "sonatype"
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
 }
 
 jar {
