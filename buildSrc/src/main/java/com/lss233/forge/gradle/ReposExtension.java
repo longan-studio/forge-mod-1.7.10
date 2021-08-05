@@ -3,10 +3,10 @@ package com.lss233.forge.gradle;
 import org.gradle.api.Project;
 
 public class ReposExtension {
-    private String mcJsonUrl = "http://s3.amazonaws.com/Minecraft.Download/versions/{MC_VERSION}/{MC_VERSION}.json";
-    private String mcJarUrl = "http://s3.amazonaws.com/Minecraft.Download/versions/{MC_VERSION}/{MC_VERSION}.jar";
-    private String mcServerUrl = "http://s3.amazonaws.com/Minecraft.Download/versions/{MC_VERSION}/minecraft_server.{MC_VERSION}.jar";
-    private String assetsUrl = "http://resources.download.minecraft.net";
+    private String mcJsonUrl = "https://s3.amazonaws.com/Minecraft.Download/versions/{MC_VERSION}/{MC_VERSION}.json";
+    private String mcJarUrl = "https://s3.amazonaws.com/Minecraft.Download/versions/{MC_VERSION}/{MC_VERSION}.jar";
+    private String mcServerUrl = "https://s3.amazonaws.com/Minecraft.Download/versions/{MC_VERSION}/minecraft_server.{MC_VERSION}.jar";
+    private String assetsUrl = "https://resources.download.minecraft.net";
     private String assetsIndexUrl = "https://s3.amazonaws.com/Minecraft.Download/indexes/{ASSET_INDEX}.json";
 
     public ReposExtension() {
