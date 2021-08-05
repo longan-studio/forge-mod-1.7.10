@@ -54,7 +54,7 @@ public class Constants {
     public static final String ASSETS_INDEX_URL = "https://s3.amazonaws.com/Minecraft.Download/indexes/{ASSET_INDEX}.json";
      */
 
-    @Suppress("HttpUrlsUsage") // TODO: dead link
+    @SuppressWarnings("HttpUrlsUsage") // TODO: dead link
     public static final String MCP_URL = "http://www.modcoderpack.com/files/mcp908.zip";
     
     public static final String FORGE_MAVEN = "https://maven.minecraftforge.net";
@@ -62,6 +62,8 @@ public class Constants {
 
     // MCP things
     public static final String CONFIG_MCP_DATA = "mcpSnapshotDataConfig";
+    
+    @SuppressWarnings("HttpUrlsUsage")
     public static final String MCP_JSON_URL = "http://export.mcpbot.bspk.rs/versions.json";
 
     // things in the cache dir.
